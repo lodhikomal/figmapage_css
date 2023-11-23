@@ -2,6 +2,7 @@
   width: 100%;
   height: 60px;
   flex-shrink: 0;
+  padding-top: 10px;
   /* margin-bottom: 10px; */
   /* background-color: aqua; */
 }
@@ -21,6 +22,7 @@
 .nav-menu {
   display: flex;
   align-items: center;
+
   gap: 20px;
 }
 .menu-items {
@@ -58,4 +60,13 @@
   font-weight: 500;
   line-height: 18px;
   border-radius: 2px;
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
 }

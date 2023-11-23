@@ -62,3 +62,10 @@
 h4.wrapper-heading.\{props\.newClass\} {
   margin-top: 10px;
 }
+@media screen and (max-width: 767px) {
+  .wrapper-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
