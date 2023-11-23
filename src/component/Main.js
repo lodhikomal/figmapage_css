@@ -1,21 +1,23 @@
 import React from "react";
 import "../style/mainStyle.css";
 import groupImg from "../assets/Group1.jpg";
-
+import image2 from "../assets/image2.svg";
 function Main() {
   return (
     <>
       <div className="main-container">
         <div className="main-text">
-          <h2 className="main-heading">
+          <p className="main-heading">
             Introduce Your Product Quickly & Effectively
-          </h2>
+          </p>
           <p className="main-para">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            aliquip ex ea commodo consequat. <br />
+            <br />
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla
           </p>
           <div className="main-btn">
             <button className="btn-purchase">Purcase Ui Kit</button>
@@ -33,8 +35,10 @@ function Main() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            aliquip ex ea commodo consequat.
+            <br />
+            <br /> Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla
           </p>
           <div className="icon-container">
             <div className="icon-items">
@@ -87,7 +91,9 @@ function Main() {
             </div>
           </div>
         </div>
-        <div className="bottom-image"></div>
+        <div className="bottom-image-container">
+          <img src={image2} className="bottom-image"></img>
+        </div>
       </div>
     </>
   );

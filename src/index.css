@@ -9,6 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #fbfbfd;
   box-sizing: border-box;
+  flex-shrink: 0px;
 }
 
 /* code {
