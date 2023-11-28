@@ -87,3 +87,12 @@
   height: 16px;
   flex-shrink: 0;
 }
+@media screen and (max-width: 767px) {
+  .footer-top {
+    padding: 20px 10px;
+  }
+
+  .footer-bottom {
+    padding: 20px 10px;
+  }
+}

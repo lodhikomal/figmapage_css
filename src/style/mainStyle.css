@@ -8,8 +8,9 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: 50%;
+  width: 80%;
   gap: 10px;
+  padding: 20px 60px;
 }
 .main-heading {
   color: var(--main);
@@ -33,11 +34,7 @@
   font-weight: 400;
   line-height: 30px; /* 166.667% */
 }
-.main-btn {
-  padding-top: 10px;
-  display: flex;
-  gap: 20px;
-}
+
 .btn-purchase {
   width: 189px;
 
@@ -72,10 +69,15 @@
   line-height: 26px;
 }
 .main-image {
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  text-align: center;
 }
 .img {
   width: 100%;
+  height: 780px;
+  /* width: 100%; */
 }
 .main-container-bottom {
   display: flex;
@@ -86,7 +88,7 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: 500px;
+  width: 40%;
   gap: 10px;
 }
 .bottom-heading {
@@ -140,48 +142,72 @@
   font-weight: 400;
   line-height: 18px; /* 150% */
 }
-.bottom-image-container {
-  margin-top: 23px;
-}
+
 .bottom-image {
-  width: 540px;
-  height: 525px;
-  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.main-btn {
+  display: flex;
+
+  gap: 10px;
 }
 @media screen and (max-width: 767px) {
-  .main-container {
-    display: flex;
-    /* background-color: #6f7cb2; */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .main-text {
-    gap: 10px;
-    width: fit-content;
-    /* background: aqua; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .main-heading {
-    font-size: 40px;
-  }
-  .main-image {
-    width: 100%;
-    height: 600px;
-    padding-top: 30px;
-  }
+  .main-container,
   .main-container-bottom {
-    display: flex;
     flex-direction: column;
-    /* background-color: #091133; */
-    padding: 100px 0;
     align-items: center;
   }
-  .bottom-image {
+
+  /* .main-text {
     width: 100%;
     text-align: center;
+  } */
+  .main-btn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-heading,
+  .bottom-heading {
+    text-align: center;
+  }
+
+  .bottom-image-container {
+    margin-top: 23px;
+  }
+
+  .bottom-text {
+    width: 100%;
+  }
+  .bottom-para {
+    text-align: center;
+  }
+
+  .icon-container {
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-items {
+    align-items: center;
+    text-align: center;
+  }
+
+  .svg-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .svg-title {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .icon-para {
+    margin-top: 10px;
+    font-size: 12px;
   }
 }

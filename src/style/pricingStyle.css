@@ -102,3 +102,8 @@
   flex-direction: column;
   gap: 10px;
 }
+@media screen and (max-width: 767px) {
+  .pricing-list {
+    max-width: 100%;
+  }
+}
